@@ -1,0 +1,32 @@
+.main-skill {
+  width: 100%;
+  padding: 50px 0;
+}
+
+.skill-frontend {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.skill-first > div > div {
+  background-color: #7aba78;
+  border-radius: 3px;
+  padding: 3px;
+}
+
+.main-skill-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.skill-frontend-introduction {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+  align-items: center;
+}

@@ -1,0 +1,7 @@
+.main-image {
+  width: 100vw;
+  height: 700px;
+  background-image: url(../image/main.jpg);
+  background-size: cover;
+  background-position: center;
+}

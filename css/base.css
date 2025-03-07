@@ -1,0 +1,109 @@
+@font-face {
+  font-family: "CookieRun-Regular";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/CookieRun-Regular.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: "CookieRun-Regular";
+}
+
+/* table cols S */
+.table-cols {
+  border-spacing: 0;
+  width: 100%;
+}
+
+.table-cols th {
+  background: #e6e6e6;
+  padding: 10px 20px;
+  border-bottom: 1px solid #aac4ff;
+  text-align: left;
+}
+
+.table-cols td {
+  padding: 10px;
+  border-bottom: 1px solid #aac4ff;
+}
+
+.table-cols tr:first-of-type th,
+.table-cols tr:first-of-type td {
+  border-top: 1px solid #aac4ff;
+}
+
+.table-cols + .table-cols {
+  margin-top: 30px;
+}
+
+/* table cols E */
+
+/* table rows S */
+
+.table-rows {
+  border-spacing: 0;
+  width: 100%;
+}
+
+.table-rows thead th {
+  background: #7aba78;
+  color: #fff;
+  padding: 10px;
+  font-size: 1.15rem;
+}
+
+.table-rows thead th + th {
+  border-left: 1px solid #f8f8f8;
+}
+
+.table-rows tbody td {
+  border-bottom: 1px solid #ccc;
+  padding: 10px;
+}
+
+.table-rows tbody td + td {
+  border-left: 1px solid #7aba78;
+}
+
+.table-rows tbody tr:nth-of-type(2n) td {
+  background: #f8f8f8;
+}
+
+.table-rows .no-data {
+  padding: 150px 0;
+  text-align: center;
+  font-size: 1.15rem;
+}
+
+.table-rows + .table-rows {
+  margin-top: 30px;
+}
+
+.table-rows thead th:nth-child(1),
+.table-rows tbody td:nth-child(1) {
+  width: 150px;
+}
+
+.table-rows thead th:nth-child(4),
+.table-rows tbody td:nth-child(4) {
+  width: 300px;
+}
+
+/* table rows E */
+
+.centered {
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.centered > h5 {
+  font-size: 30px;
+  color: black;
+  margin-bottom: 30px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
