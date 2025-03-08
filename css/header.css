@@ -51,6 +51,11 @@ header {
   transition: all 0.3s;
 }
 
+.header-main {
+  display: flex;
+  flex-direction: row;
+}
+
 @media screen and (max-width: 768px) {
   .nav {
     flex-direction: column;

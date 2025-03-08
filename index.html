@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>곽경섭 자기소개서</title>
+    <script src="javascript/timer.js" defer></script>
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/base.css" />
     <link rel="stylesheet" href="css/header.css" />
@@ -24,54 +25,65 @@
   <body>
     <!-- Header -->
     <header class="header">
-      <nav class="nav">
-        <div class="logo">
-          <span>곽경섭</span>
-        </div>
-        <ul class="links">
-          <li>
-            <a href="#move-about-me">
-              <i class="fa-solid fa-house"></i>
-              About Me
-            </a>
-          </li>
-          <li>
-            <a href="#move-education">
-              <i class="fa-solid fa-user-graduate"></i>
-              Education
-            </a>
-          </li>
-          <li>
-            <a href="#move-exprience">
-              <i class="fa-solid fa-briefcase"></i>
-              Exprience
-            </a>
-          </li>
-          <li>
-            <a href="#move-skill">
-              <i class="fa-solid fa-book"></i>
-              Skill
-            </a>
-          </li>
-          <li>
-            <a href="#move-project">
-              <i class="fa-solid fa-bars-progress"></i>
-              Project
-            </a>
-          </li>
-          <li>
-            <a href="#move-contact-me">
-              <i class="fa-solid fa-address-card"></i>
-              Contact me
-            </a>
-          </li>
-        </ul>
-      </nav>
+      <div class="header-main">
+        <nav class="nav">
+          <div class="logo">
+            <span>곽경섭</span>
+          </div>
+          <ul class="links">
+            <li>
+              <a href="#move-about-me">
+                <i class="fa-solid fa-house"></i>
+                About Me
+              </a>
+            </li>
+            <li>
+              <a href="#move-education">
+                <i class="fa-solid fa-user-graduate"></i>
+                Education
+              </a>
+            </li>
+            <li>
+              <a href="#move-exprience">
+                <i class="fa-solid fa-briefcase"></i>
+                Exprience
+              </a>
+            </li>
+            <li>
+              <a href="#move-skill">
+                <i class="fa-solid fa-book"></i>
+                Skill
+              </a>
+            </li>
+            <li>
+              <a href="#move-project">
+                <i class="fa-solid fa-bars-progress"></i>
+                Project
+              </a>
+            </li>
+            <li>
+              <a href="#move-contact-me">
+                <i class="fa-solid fa-address-card"></i>
+                Contact me
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <!-- Main -->
     <main>
       <section class="main-image"></section>
       <!--About Me S-->
+      <div id="clock">
+        <div class="clock-face">
+          <div class="hand hour-hand"></div>
+          <div class="hand minute-hand"></div>
+          <div class="hand second-hand"></div>
+          <div class="clock-numbers"></div>
+          <div class="clock-center"></div>
+        </div>
+      </div>
       <section id="move-about-me" class="main-about-me">
         <div class="centered">
           <h5>
@@ -117,29 +129,29 @@
             </thead>
             <tbody>
               <tr>
-                <td>2024.09 ~ 2025.02</td>
+                <td class="table-period">2024.09 ~ 2025.02</td>
                 <td>
                   코리아IT아카데미 AI(인공지능)활용 핀테크서비스 개발자 양성과정
                 </td>
                 <td>수료</td>
               </tr>
               <tr>
-                <td>2020.07 ~ 2023.08</td>
+                <td class="table-period">2020.07 ~ 2023.08</td>
                 <td>서울디지털대학교 소프트웨어공학과</td>
                 <td>졸업</td>
               </tr>
               <tr>
-                <td>2017.03 ~ 2020.02</td>
+                <td class="table-period">2017.03 ~ 2020.02</td>
                 <td>학점은행제 심리학전공</td>
                 <td>졸업</td>
               </tr>
               <tr>
-                <td>2012.03 ~ 2013.03</td>
+                <td class="table-period">2012.03 ~ 2013.03</td>
                 <td>원광대학교 컴퓨터공학과</td>
                 <td>중퇴</td>
               </tr>
               <tr>
-                <td>2009.03 ~ 2012.02</td>
+                <td class="table-period">2009.03 ~ 2012.02</td>
                 <td>동인천고등학교</td>
                 <td>졸업</td>
               </tr>
@@ -166,7 +178,7 @@
             </thead>
             <tbody>
               <tr>
-                <td>2020.07 ~ 2024.07</td>
+                <td class="table-period">2020.07 ~ 2024.07</td>
                 <td>NHC</td>
                 <td>시스템사업부2팀 / 대리</td>
                 <td>
@@ -175,7 +187,7 @@
                 </td>
               </tr>
               <tr>
-                <td>2020.05 ~ 2020.07</td>
+                <td class="table-period">2020.05 ~ 2020.07</td>
                 <td>서강직업전문학교</td>
                 <td>사원</td>
                 <td>직업 상담 및 교직원 업무</td>

@@ -8,8 +8,9 @@
 
 body {
   font-family: "CookieRun-Regular";
+  font-size: 18px;
+  user-select: none;
 }
-
 /* table cols S */
 .table-cols {
   border-spacing: 0;
@@ -90,6 +91,10 @@ body {
   width: 300px;
 }
 
+.table-period {
+  font-size: 1rem;
+}
+
 /* table rows E */
 
 .centered {
@@ -106,4 +111,90 @@ body {
 
 html {
   scroll-behavior: smooth;
+}
+
+#clock {
+  width: 100px;
+  height: 100px;
+  position: fixed;
+  right: 250px;
+  top: 300px;
+  background: white;
+  border-radius: 50%;
+  border: 4px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.clock-face {
+  width: 90%;
+  height: 90%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: white;
+}
+
+.hand {
+  position: absolute;
+  left: 50%;
+  transform-origin: 0% 50%;
+  transform: rotate(90deg);
+  transition: transform 0.1s linear;
+}
+
+.hour-hand {
+  width: 25px;
+  height: 6px;
+  background: black;
+  border-radius: 5px;
+}
+
+/* 분침 */
+.minute-hand {
+  width: 35px;
+  height: 4px;
+  background: black;
+  border-radius: 5px;
+}
+
+/* 초침 */
+.second-hand {
+  width: 45px;
+  height: 2px;
+  background: red;
+  border-radius: 2px;
+}
+
+.clock-numbers {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.clock-numbers span {
+  position: absolute;
+  font-size: 14px;
+  font-weight: bold;
+  color: black;
+  transform: translate(-50%, -50%);
+}
+
+.clock-center {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: black;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
 }
